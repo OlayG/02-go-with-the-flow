@@ -10,29 +10,35 @@ namespace GoWithTheFlow
     {
         static void Main(string[] args)
         {
+            //Get users name
             Console.Write("Hello, can you provide me your name? ");
             string playerName = Console.ReadLine();
             Console.WriteLine();
 
+            //Welcome user
             Console.WriteLine("Hello " + playerName + " do you want to know if today is a good day to go outside?");
             Console.WriteLine();
 
+            //Asks user if they want to run the program
             Console.WriteLine("Press 1 for yes and 2 for No");
             int playerSelection = Convert.ToInt16(Console.ReadLine());
             Console.WriteLine();
 
+            //If the player selects yes then this runs
             if (playerSelection == 1)
             {
+                //Gives instructions for the user to follow
                 Console.WriteLine("Instructions");
                 Console.WriteLine("Press 1 for YES");
                 Console.WriteLine("Press 2 for NO");
                 Console.WriteLine();
 
+                //First question of the flow chart
                 Console.WriteLine("Is it raining outside?");
                 int confirmRain = Convert.ToInt16(Console.ReadLine());
                 Console.WriteLine();
                 
-
+                //First split decision of the chart
                 if (confirmRain == 1)
                 {
                     Console.WriteLine("Do you have a umbrella?");
@@ -70,6 +76,7 @@ namespace GoWithTheFlow
                     }
 
                 }
+                //If the player says no to the program this runs
                 else
                 {
                     Console.WriteLine("It sounds like a nice day out, it's safe to proceed outside");
